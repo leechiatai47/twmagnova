@@ -112,54 +112,77 @@ header nav ul li a:hover {
 }
 
 /* 頁尾 */
-/* --- 頁尾與聯絡資訊樣式 (高質感排版) --- */
+/* --- 頁尾與聯絡資訊樣式 (高質感企業升級版) --- */
 footer {
-    background-color: #1a1c20; /* 帶有科技感的極深灰黑底色 */
-    color: #cccccc; /* 柔和的淺灰文字，提升閱讀舒適度 */
-    padding: 70px 0 20px;
+    background-color: #222831; /* 更沉穩的曜石黑背景 */
+    color: #e3e6f3; /* 柔和的亮灰色文字，比純白看起來更舒服 */
+    padding: 60px 0 30px;
     margin-top: 60px;
-    border-top: 4px solid #003366; /* 頂部加上威創專業藍飾條 */
-}
-
-/* 將頁尾分為左右兩大塊 */
-.footer-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer-brand {
-    flex: 1;
-    min-width: 250px;
+/* 標題質感大升級 */
+footer h2 {
+    color: #ffffff; /* 標題改為純白色，極致清晰 */
+    font-size: 2.2rem;
+    letter-spacing: 4px; /* 拉大字距，營造大氣的企業感 */
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
 }
 
-.footer-brand h2 {
-    color: #ffffff;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    letter-spacing: 2px; /* 增加字距，看起來更大氣 */
+/* 在標題下方加入威創專屬綠色的精品裝飾線 */
+footer h2::after {
+    content: '';
+    display: block;
+    width: 60px; /* 裝飾線的長度 */
+    height: 4px; /* 裝飾線的粗細 */
+    background-color: #00b050; /* 威創專屬綠色 */
+    margin: 15px auto 0;
+    border-radius: 2px;
 }
 
-.footer-brand p {
-    line-height: 1.8;
-    font-size: 0.95rem;
-    max-width: 350px;
-}
-
-/* 聯絡資訊區塊 (維持 GEO 但重設樣式) */
-.footer-info {
-    flex: 2;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+/* 聯絡資訊外框質感優化 */
+.contact-info {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05); /* 微微的毛玻璃透視感 */
+    padding: 40px;
+    border-radius: 12px;
     font-style: normal;
+    line-height: 2.2;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* 極細的發光邊框 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* 增加立體陰影 */
 }
 
-.info-block {
-    flex: 1;
-    min-width: 220px;
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* 解決電話與信箱看不清楚的問題 */
+.contact-info a {
+    color: #4da6ff; /* 改為明亮的科技藍色 */
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ffcc00; /* 滑鼠移過去變成搶眼的金色 */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #777777;
+}
 }
 
 .info-block h3 {
