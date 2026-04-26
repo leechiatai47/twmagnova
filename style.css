@@ -112,10 +112,53 @@ header nav ul li a:hover {
 }
 
 /* 頁尾 */
+/* --- 頁尾與聯絡資訊樣式 --- */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #2c3e50; /* 穩重的深灰色背景 */
+    color: #f8f9fa;
+    padding: 50px 0 20px;
+    margin-top: 60px;
+}
+
+footer h2 {
     text-align: center;
-    padding: 30px 0;
+    color: #00b050; /* 威創專屬綠色 */
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.contact-info {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05); /* 微透明的框框質感 */
+    padding: 30px;
+    border-radius: 10px;
+    font-style: normal; /* 抵銷 address 標籤預設的斜體字 */
+    line-height: 2;
+    border: 1px solid #4a5c6d;
+}
+
+.contact-info p {
+    font-size: 1.05rem;
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #4da6ff; /* 連結顏色 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ffcc00; /* 滑鼠移過去變色 */
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
     margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #4a5c6d;
+    font-size: 0.9rem;
+    color: #95a5a6;
 }
