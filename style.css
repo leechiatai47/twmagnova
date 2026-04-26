@@ -112,48 +112,90 @@ header nav ul li a:hover {
 }
 
 /* 頁尾 */
-/* --- 頁尾與聯絡資訊樣式 --- */
+/* --- 頁尾與聯絡資訊樣式 (高質感排版) --- */
 footer {
-    background-color: #2c3e50; /* 穩重的深灰色背景 */
-    color: #f8f9fa;
-    padding: 50px 0 20px;
+    background-color: #1a1c20; /* 帶有科技感的極深灰黑底色 */
+    color: #cccccc; /* 柔和的淺灰文字，提升閱讀舒適度 */
+    padding: 70px 0 20px;
     margin-top: 60px;
+    border-top: 4px solid #003366; /* 頂部加上威創專業藍飾條 */
 }
 
-footer h2 {
-    text-align: center;
-    color: #00b050; /* 威創專屬綠色 */
-    margin-bottom: 25px;
+/* 將頁尾分為左右兩大塊 */
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-brand {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-brand h2 {
+    color: #ffffff;
     font-size: 1.8rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px; /* 增加字距，看起來更大氣 */
 }
 
-.contact-info {
-    max-width: 500px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.05); /* 微透明的框框質感 */
-    padding: 30px;
-    border-radius: 10px;
-    font-style: normal; /* 抵銷 address 標籤預設的斜體字 */
-    line-height: 2;
-    border: 1px solid #4a5c6d;
+.footer-brand p {
+    line-height: 1.8;
+    font-size: 0.95rem;
+    max-width: 350px;
 }
 
-.contact-info p {
-    font-size: 1.05rem;
-    margin-bottom: 5px;
+/* 聯絡資訊區塊 (維持 GEO 但重設樣式) */
+.footer-info {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-style: normal;
 }
 
-.contact-info a {
-    color: #4da6ff; /* 連結顏色 */
+.info-block {
+    flex: 1;
+    min-width: 220px;
+}
+
+.info-block h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #333333; /* 質感低調分隔線 */
+}
+
+.info-block p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* 解決連結看不清楚的問題 */
+.info-block a {
+    color: #ffffff; /* 將超連結改為白色 */
     text-decoration: none;
-    transition: color 0.3s ease;
+    border-bottom: 1px dashed #666; /* 增加低調的虛線提示這可以點擊 */
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-.contact-info a:hover {
-    color: #ffcc00; /* 滑鼠移過去變色 */
-    text-decoration: underline;
+.info-block a:hover {
+    color: #00b050; /* 滑鼠移過去顯示威創專屬綠色 */
+    border-color: #00b050;
 }
 
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #2a2d34;
+    font-size: 0.85rem;
+    color: #666666;
+}
 .footer-bottom {
     text-align: center;
     margin-top: 40px;
