@@ -1,0 +1,121 @@
+/* 全局設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 導覽列 */
+header {
+    background-color: #003366; /* 威創專業藍 */
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* 橫幅區域 */
+.hero {
+    background-color: #e9ecef;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* 服務區域 */
+.services, .about-us {
+    padding: 50px 0;
+}
+
+.services h2, .about-us h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+/* 優勢列表 */
+.about-us ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 5px solid #003366;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 頁尾 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
