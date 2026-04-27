@@ -112,41 +112,89 @@ header nav ul li a:hover {
 }
 
 /* 頁尾 */
-/* --- 頁尾與聯絡資訊樣式 (高質感企業升級版) --- */
+/* --- 頁尾與聯絡資訊樣式 (終極高質感版) --- */
 footer {
-    background-color: #222831; /* 更沉穩的曜石黑背景 */
-    color: #e3e6f3; /* 柔和的亮灰色文字，比純白看起來更舒服 */
+    background-color: #222831; /* 沉穩的曜石黑背景 */
+    color: #e3e6f3;
     padding: 60px 0 30px;
     margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-/* 標題質感大升級 */
+/* 標題與裝飾線 */
 footer h2 {
-    color: #ffffff; /* 標題改為純白色，極致清晰 */
+    color: #ffffff;
     font-size: 2.2rem;
-    letter-spacing: 4px; /* 拉大字距，營造大氣的企業感 */
+    letter-spacing: 4px;
     margin-bottom: 40px;
     position: relative;
     text-align: center;
 }
 
-/* 在標題下方加入威創專屬綠色的精品裝飾線 */
 footer h2::after {
     content: '';
     display: block;
-    width: 60px; /* 裝飾線的長度 */
-    height: 4px; /* 裝飾線的粗細 */
-    background-color: #00b050; /* 威創專屬綠色 */
+    width: 60px;
+    height: 4px;
+    background-color: #00b050; /* 威創綠色裝飾線 */
     margin: 15px auto 0;
     border-radius: 2px;
 }
 
-/* 聯絡資訊外框質感優化 */
+/* 立體半透明卡片設定 (這就是你想要的底色！) */
 .contact-info {
-    max-width: 600px;
+    max-width: 800px; /* 加寬卡片 */
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05); /* 毛玻璃透視底色 */
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* 立體陰影 */
+    
+    /* 啟動左右分欄排版 */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.info-block {
+    flex: 1;
+    min-width: 280px;
+}
+
+.info-block h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 質感分隔線 */
+}
+
+.info-block p {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+}
+
+/* 超連結顏色與互動 */
+.info-block a {
+    color: #4da6ff; /* 科技藍色 */
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    margin-left: 5px;
+}
+
+.info-block a:hover {
+    color: #ffcc00; /* 滑鼠移過去變金色 */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #777777;
+}
     width: 100%;
     background: rgba(255, 255, 255, 0.05); /* 微微的毛玻璃透視感 */
     padding: 40px;
