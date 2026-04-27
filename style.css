@@ -29,7 +29,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} /* 補上這個括號，解救整個網頁！ */
 
 header nav ul {
     list-style: none;
@@ -111,10 +111,73 @@ header nav ul li a:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* 頁尾 */
+/* --- 合作夥伴區域樣式 (充滿自信與質感的置中設計) --- */
+.partners-section {
+    padding: 80px 20px;
+    background-color: #f8f9fa; 
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    /* 使用 Flexbox 確保內部所有元素絕對置中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+/* 🏆 主標題：自信跳出特效 */
+.partners-section h2 {
+    font-size: 2.8rem;
+    font-weight: 900; 
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    /* 漸層金屬光澤文字 */
+    background: linear-gradient(90deg, #003366 0%, #00b050 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.15));
+}
+
+/* 📜 副標題：穩重與質感 */
+.partners-section p {
+    color: #555555;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 700px; 
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+/* 🖼️ 圖片外框設定 */
+.partners-image-wrapper {
+    max-width: 750px;
+    width: 100%;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 51, 102, 0.08); 
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.partners-image-wrapper:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 51, 102, 0.15);
+}
+
+.partners-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%) opacity(0.7);
+    transition: all 0.5s ease;
+}
+
+.partners-image-wrapper img:hover {
+    filter: grayscale(0%) opacity(1);
+}
+
 /* --- 頁尾與聯絡資訊樣式 (終極高質感版) --- */
 footer {
-    background-color: #222831; /* 沉穩的曜石黑背景 */
+    background-color: #222831; 
     color: #e3e6f3;
     padding: 60px 0 30px;
     margin-top: 60px;
@@ -135,20 +198,20 @@ footer h2::after {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: #00b050; /* 威創綠色裝飾線 */
+    background-color: #00b050; 
     margin: 15px auto 0;
     border-radius: 2px;
 }
 
-/* 立體半透明卡片設定 (這就是你想要的底色！) */
+/* 立體半透明卡片設定 */
 .contact-info {
-    max-width: 800px; /* 加寬卡片 */
+    max-width: 800px; 
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.05); /* 毛玻璃透視底色 */
+    background: rgba(255, 255, 255, 0.05); 
     padding: 40px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* 立體陰影 */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
     
     /* 啟動左右分欄排版 */
     display: flex;
@@ -167,7 +230,7 @@ footer h2::after {
     font-size: 1.2rem;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 質感分隔線 */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
 .info-block p {
@@ -177,7 +240,7 @@ footer h2::after {
 
 /* 超連結顏色與互動 */
 .info-block a {
-    color: #4da6ff; /* 科技藍色 */
+    color: #4da6ff; 
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
@@ -186,7 +249,7 @@ footer h2::after {
 }
 
 .info-block a:hover {
-    color: #ffcc00; /* 滑鼠移過去變金色 */
+    color: #ffcc00; 
 }
 
 .footer-bottom {
@@ -194,84 +257,4 @@ footer h2::after {
     margin-top: 50px;
     font-size: 0.9rem;
     color: #777777;
-}
-    width: 100%;
-    background: rgba(255, 255, 255, 0.05); /* 微微的毛玻璃透視感 */
-    padding: 40px;
-    border-radius: 12px;
-    font-style: normal;
-    line-height: 2.2;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* 極細的發光邊框 */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* 增加立體陰影 */
-}
-
-.contact-info p {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-}
-
-/* 解決電話與信箱看不清楚的問題 */
-.contact-info a {
-    color: #4da6ff; /* 改為明亮的科技藍色 */
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-    color: #ffcc00; /* 滑鼠移過去變成搶眼的金色 */
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.9rem;
-    color: #777777;
-}
-}
-
-.info-block h3 {
-    color: #ffffff;
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #333333; /* 質感低調分隔線 */
-}
-
-.info-block p {
-    margin-bottom: 10px;
-    line-height: 1.6;
-    font-size: 0.95rem;
-}
-
-/* 解決連結看不清楚的問題 */
-.info-block a {
-    color: #ffffff; /* 將超連結改為白色 */
-    text-decoration: none;
-    border-bottom: 1px dashed #666; /* 增加低調的虛線提示這可以點擊 */
-    transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-.info-block a:hover {
-    color: #00b050; /* 滑鼠移過去顯示威創專屬綠色 */
-    border-color: #00b050;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #2a2d34;
-    font-size: 0.85rem;
-    color: #666666;
-}
-.footer-bottom {
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #4a5c6d;
-    font-size: 0.9rem;
-    color: #95a5a6;
 }
